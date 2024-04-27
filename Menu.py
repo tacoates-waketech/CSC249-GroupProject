@@ -13,10 +13,10 @@ def main():
         choice = input("Enter your choice: ")
 
         if choice == '1':
-            course = input("Enter the name of the course to add: ")
+            course = input("Enter the name of the course to add: ").upper()
             manager.add_course(course)
         elif choice == '2':
-            course = input("Enter the name of the course to drop: ")
+            course = input("Enter the name of the course to drop: ").upper()
             manager.drop_course(course)
         elif choice == '3':
             manager.list_courses()
